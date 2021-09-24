@@ -1,0 +1,16 @@
+# include <stdio.h>
+#include <locale.h>
+main()
+{
+	long long a ;
+	long long b ;
+	long long c ;
+	long long cb;
+	
+	setlocale(LC_ALL, "Rus");
+
+	printf("¬ведите 3 целых  положительных числа через пробел:");
+	scanf_s("%lld %lld %lld", &a, &b, &c);
+	cb = b - c;
+	printf("%lld - %lld = %lld", b, c, cb);
+}
